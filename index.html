@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>CsC button demo</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      (function (w, d, s, o, f, cid) {
+        if (!w[o]) {
+          w[o] = function () {
+            w[o].q.push(arguments);
+          };
+          w[o].q = [];
+        }
+        (js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]);
+        js.id = o;
+        js.src = f;
+        js.async = 1;
+        js.title = cid;
+        fjs.parentNode.insertBefore(js, fjs);
+      })(
+        window,
+        document,
+        "script",
+        "_csc",
+        "https://sandbox-sdk.conscent.in/csc-sdk.js",
+        "5f92a62013332e0f667794dc"
+      );
+    </script>
+    <script src="paywall.js"></script>
+  </head>
+
+  <body>
+    <div>Hello</div>
+    <div id="paywall"></div>
+  </body>
+</html>
